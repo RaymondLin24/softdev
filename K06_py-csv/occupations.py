@@ -13,3 +13,10 @@ with open('occupations.csv', newline='') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
 
     for row in spamreader:
+        
+def random_occupation():
+    precentage = 0
+    occupation = ""
+    for jobs in occupation:
+        ##
+    print ("occupation" + "percenatge")

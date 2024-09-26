@@ -15,7 +15,7 @@ def hello_world():
     return "No hablo queso!"
 
 
-@app.route("/static/foo.html")
+@app.route("/static/foo")
 def h():
     print("the __name__ of this module is... ")
     print(__name__)

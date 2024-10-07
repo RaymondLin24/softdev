@@ -1,24 +1,24 @@
-Job Class,Percentage
-Management,6.1
-Business and Financial operations,5
-Computer and Mathematical,2.7
-Architecture and Engineering,1.7
-"Life, Physical and Social Science",0.9
-Community and Social Service,1.6
-Legal,0.8
-"Education, training and library",6.1
-"Arts, design, entertainment, sports and media",1.7
-Healthcare practioners and technical,5.5
-Healthcare support,2.8
-Protective service,2.3
-Food preparation and serving,8.3
-Building and grounds cleaning and maintenance,3.7
-Personal care and service,4
-Sales,10.2
-Office and administrative support,15.1
-"Farming, fishing and forestry",0.6
-Construction and extraction,4.3
-"Installation, maintenance and repair",3.8
-Production,6.1
-Transportation and material moving,6.5
-Total,99.8
+Job Class,Percentage,Link
+Management,6.1,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#management
+Business and Financial operations,5,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#business-financial
+Computer and Mathematical,2.7,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#computer-mathematical
+Architecture and Engineering,1.7,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#architecture-engineering
+"Life, Physical and Social Science",0.9,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#life-physical-social-science
+Community and Social Service,1.6,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#community-social-service
+Legal,0.8,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#legal
+"Education, training and library",6.1,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#education-training-library
+"Arts, design, entertainment, sports and media",1.7,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#arts-design-entertainment-sports-media
+Healthcare practitioners and technical,5.5,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#healthcare-practitioners-technical
+Healthcare support,2.8,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#healthcare-support
+Protective service,2.3,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#protective-service
+Food preparation and serving,8.3,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#food-preparation-serving
+Building and grounds cleaning and maintenance,3.7,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#building-grounds-cleaning-maintenance
+Personal care and service,4,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#personal-care-service
+Sales,10.2,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#sales
+Office and administrative support,15.1,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#office-administrative-support
+"Farming, fishing and forestry",0.6,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#farming-fishing-forestry
+Construction and extraction,4.3,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#construction-extraction
+"Installation, maintenance and repair",3.8,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#installation-maintenance-repair
+Production,6.1,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#production
+Transportation and material moving,6.5,https://www.indeed.com/career-advice/finding-a-job/main-job-sectors-in-the-us#transportation-material-moving
+Total,99.8,

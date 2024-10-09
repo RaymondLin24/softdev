@@ -1,8 +1,8 @@
 #Raymond Lin
 #Death Row Coders
 #SoftDev
-#Creating the login and response pages
-#2024/10/08
+#Flask Sessions Plan
+#2024/10/09
 #30 min
 
 DISCO:
@@ -21,13 +21,7 @@ Q/C/C:
 
 OTHER?
 * I'm not sure what the terminal prints after I uncomment each print statement. 
-* Making the debugger false didn't give any new insights either.
+* 
 * 
 -----------------------------------------------------------------------
-
-
-
-
-
-
 

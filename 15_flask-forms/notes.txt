@@ -1,21 +1,21 @@
 < your heading here >
 
-DISCO:
-* User is led to a page where you can enter a username for authentication purposes but after you enter a username, you are brought to a page that says "Waaaa hooo HAAAH".
-* 
-* 
+DISCO:Test
+* Testmod0 is imported as a package in python. 
+* Running testmod0.py in the terminal prints the text in the file.
+* There is no password for the login page. 
 -----------------------------------------------------------------------
 
 
 Q/C/C:
-* What does sub1 mean when you hover over the tab after you submit a username?
-* The caption of the page after the authentication never changes and stays as "Waaaa hooo HAAAH".
+* What other methods can be used for a login and response page?
+* There is no accounts system. 
 * 
 -----------------------------------------------------------------------
 
 
 OTHER?
-* 
+* Header now only shows the address, doesn't also show the username in it anymore. 
 * 
 * 
 -----------------------------------------------------------------------

@@ -2,59 +2,30 @@
 # SoftDev
 # October 2024
 
-# import conventions:
-# list most general first (standard python library)
-# ...then pip installs (eg Flask)
-# ...then your own home-rolled modules/packages (today's test module)
+import os
+from flask import Flask
+from flask import render_template
+from flask import request
+from flask import session
 
-from flask import Flask             #facilitate flask webserving
-from flask import render_template   #facilitate jinja templating
-from flask import request           #facilitate form submission
+app = Flask(__name__)
+secret = os.urandom(32)
+app.secret_key = secret
 
-#the conventional way:
-#from flask import Flask, render_template, request
-
-app = Flask(__name__)    #create Flask object
-
-
-@app.route("/") #, methods=['GET', 'POST'])
+@app.route("/")
 def disp_loginpage():
-    ### All of these print statements print to the terminal
-    
-    #print(testmod0.goo())
-    #print("\n\n\n")
-    #print("***DIAG: this Flask obj ***")
-    #print(app)
-    #print("***DIAG: request obj ***")
-    #print(request)
-    #print("***DIAG: request.args ***")
-    #print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
-    #print("***DIAG: request.headers ***")
-    #print(request.headers)
+    print(session.get('username'))
+    if session.get('username'):
+        print("TRUEEEEEEEEEEE")
     return render_template( 'login.html' )
 
-
-@app.route("/response.html") # , methods=['GET', 'POST'])
-def responsePage():
-    #print("\n\n\n")
-    #print("***DIAG: this Flask obj ***")
-    #print(app)
-    #print("***DIAG: request obj ***")
-    #print(request)
-    #print("***DIAG: request.args ***")
-    #print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
-    #print("***DIAG: request.headers ***")
-    #print(request.headers)
-    return render_template( 'response.html', username = request.args['username']) #response to a form submission
+@app.route("/response.html" , methods=['GET','POST'])
+def authenticate():
+    session['username'] = request.args.get('username')
+    return render_template( 'response.html', username = request.args['username'])
 
 
     
-if __name__ == "__main__": #false if this file imported as module
-    #enable debugging, auto-restarting of server when this file is modified
+if __name__ == "__main__":
     app.debug = True 
     app.run()
-

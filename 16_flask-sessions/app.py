@@ -1,8 +1,8 @@
-# Kevin Lin, Raymond Lin, Christopher Louie
+# Raymond Lin, Kevin Lin, Christopher Louie
 # Death Row Coders
 # SoftDev
 # October 11, 2024
-# 2 hours
+# 2 Hours
 
 import os
 from flask import Flask
@@ -23,7 +23,9 @@ def disp_loginpage():
 
 @app.route("/response.html" , methods=['GET','POST'])
 def authenticate():
-    if(request.args.get('username') != None):
+    #if(request.args.get('username') == None): #Lets you go back to response from logout and redirects to login, but breaks if you try to go back to login from response
+    #    return redirect("/")
+    if(request.args.get('username') != None): #Only change username if it's not none
         session['username'] = request.args.get('username')
     return render_template( 'response.html', username = session['username'])
 
@@ -31,7 +33,7 @@ def authenticate():
 def logout():
     session.pop('username', None)
     return render_template('logout.html')
-
+    
 if __name__ == "__main__":
-    app.debug = True
+    app.debug = True 
     app.run()

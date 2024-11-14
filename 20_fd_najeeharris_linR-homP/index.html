@@ -17,14 +17,51 @@ Time spent: 1
 <!-- Compressed JavaScript -->
 <title> foundation of foundations</title>
 <h2> Foundation Overview</h2>
-<p>Foundation is a highly customizable front end framework built with sass (an extension of css), html, and JS. Sass stands for "Syntactically Awesome Style Sheets" 
-  and adds features such as nesting and variables to stylesheets and allows for easy customization of foundation componenets. 
-  Files created using SASS are processed to css files, and is why this page utilizes foundation without error. 
+<p>Foundation is a highly customizable front end framework built with sass (an extension of css), html, and JS. Sass stands for "Syntactically Awesome Style Sheets"
+  and adds features such as nesting and variables to stylesheets and allows for easy customization of foundation componenets.
+  Files created using SASS are processed to css files, and is why this page utilizes foundation without error.
    Below are just some examples of built in foundation features.
 </p>
 <h2> Text! </h2>
-<p>Foundations adds a bunch of useful text features such as</p> <br>
-<p> Call outs</p>
+<p>Foundations adds a bunch of useful text features such as text alignments, subheaders, lead paragraphs, and bulleted/unbulleted lists.</p> <br>
+
+<div class="row">
+  <div class="columns">
+    <p class="text-left"><strong>This text is left-aligned.</strong> Isaiah Shai Gilgeous-Alexander Lin was wandering through the wanders of the world. The Great Wall, the Great Pyramids, but nothing satisfied his hunger, his curiosity. This all changed when he stumbled across the fountain of Foundations, where he learned a new framework to design websites.</p>
+
+    <p class="text-right"><strong>This text is right-aligned.</strong> Isaiah Shai Gilgeous-Alexander Lin was wandering through the wanders of the world. The Great Wall, the Great Pyramids, but nothing satisfied his hunger, his curiosity. This all changed when he stumbled across the fountain of Foundations, where he learned a new framework to design websites.</p>
+
+    <p class="text-center"><strong>This text is center-aligned.</strong> Isaiah Shai Gilgeous-Alexander Lin was wandering through the wanders of the world. The Great Wall, the Great Pyramids, but nothing satisfied his hunger, his curiosity. This all changed when he stumbled across the fountain of Foundations, where he learned a new framework to design websites.</p>
+
+    <p class="text-justify"><strong>This text is justified.</strong> Isaiah Shai Gilgeous-Alexander Lin was wandering through the wanders of the world. The Great Wall, the Great Pyramids, but nothing satisfied his hunger, his curiosity. This all changed when he stumbled across the fountain of Foundations, where he learned a new framework to design websites.</p>
+  </div>
+</div>
+
+<h1 class="subheader" style= "color: Tomato;">h1.subheader</h1>
+<h2 class="subheader" style= "color: DodgerBlue;">h2.subheader</h2>
+<h3 class="subheader" style= "color: MediumSeaGreen;">h3.subheader</h3>
+<h4 class="subheader" style="border:2px solid Tomato;">h4.subheader</h4>
+<h5 class="subheader" style="border:2px solid DodgerBlue;">h5.subheader</h5>
+<h6 class="subheader" style="border:2px solid Violet;">h6.subheader</h6>
+
+<p class="lead">What is Isaiah Shai Gilgeous-Alexander Lin's <em>true</em> identity?</p>
+
+<ul class="no-bullet">
+  <li>Isaiah Shai Gilegeous-Alexander Lin with a much longer description or more content.</li>
+  <li>Isaiah Shai Gilegeous-Alexander Lin</li>
+  <li>Isaiah Shai Gilegeous-Alexander Lin
+    <ul>
+      <li>Nested Isaiah Shai Gilegeous-Alexander Lin</li>
+      <li>Nested Isaiah Shai Gilegeous-Alexander Lin</li>
+      <li>Nested Isaiah Shai Gilegeous-Alexander Lin</li>
+    </ul>
+  </li>
+  <li>Isaiah Shai Gilegeous-Alexander Lin</li>
+  <li>Isaiah Shai Gilegeous-Alexander Lin</li>
+  <li>Isaiah Shai Gilegeous-Alexander Lin</li>
+</ul>
+
+<h2> Call outs</h2>
 <div class="callout secondary">
   <h5>This is a secondary callout</h5>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
@@ -55,3 +92,5 @@ Time spent: 1
   <div class="cell medium-6 large-4" style="background-color: beige;">12/6/4 cells</div>
   <div class="cell medium-6 large-8" style="background-color: darkgoldenrod;">12/6/8 cells</div>
 </div>
+
+<p><button class="button" data-open="exampleModal1">Example Button with Foundation</button></p>

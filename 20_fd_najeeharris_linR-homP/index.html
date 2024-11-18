@@ -1,14 +1,12 @@
-
 <!doctype html>
 <!--
 Princeden Hom, Raymond Lin
 Team Najeeharris
 Softdev
 20_framework-abbreviation
-2024-11013
-Time spent: 1
+2024-11-13
+Time spent: 2 hrs
 -->
-<!-- Compressed CSS -->
 
 <!-- Compressed CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
@@ -19,59 +17,79 @@ Time spent: 1
 <h2> Foundation Overview</h2>
 <p>Foundation is a highly customizable front end framework built with sass (an extension of css), html, and JS. Sass stands for "Syntactically Awesome Style Sheets"
   and adds features such as nesting and variables to stylesheets and allows for easy customization of foundation componenets.
-  Files created using SASS are processed to css files, and is why this page utilizes foundation without error.
+  Files created using SASS are processed to css files, and is why this page utilizes foundation with cdn without error.
    Below are just some examples of built in foundation features.
 </p>
-<h2> Text! </h2>
-<p>Foundations adds a bunch of useful text features such as text alignments, subheaders, lead paragraphs, and bulleted/unbulleted lists.</p> <br>
 
-<div class="row">
-  <div class="columns">
-    <p class="text-left"><strong>This text is left-aligned.</strong> Isaiah Shai Gilgeous-Alexander Lin was wandering through the wanders of the world. The Great Wall, the Great Pyramids, but nothing satisfied his hunger, his curiosity. This all changed when he stumbled across the fountain of Foundations, where he learned a new framework to design websites.</p>
 
-    <p class="text-right"><strong>This text is right-aligned.</strong> Isaiah Shai Gilgeous-Alexander Lin was wandering through the wanders of the world. The Great Wall, the Great Pyramids, but nothing satisfied his hunger, his curiosity. This all changed when he stumbled across the fountain of Foundations, where he learned a new framework to design websites.</p>
-
-    <p class="text-center"><strong>This text is center-aligned.</strong> Isaiah Shai Gilgeous-Alexander Lin was wandering through the wanders of the world. The Great Wall, the Great Pyramids, but nothing satisfied his hunger, his curiosity. This all changed when he stumbled across the fountain of Foundations, where he learned a new framework to design websites.</p>
-
-    <p class="text-justify"><strong>This text is justified.</strong> Isaiah Shai Gilgeous-Alexander Lin was wandering through the wanders of the world. The Great Wall, the Great Pyramids, but nothing satisfied his hunger, his curiosity. This all changed when he stumbled across the fountain of Foundations, where he learned a new framework to design websites.</p>
+<h2> Buttons and Navigation </h2>
+<p>Foundation adds a lot of new of button and navigation classes. Below are some of the most interesting / useful </p>
+<br>
+<p>Sliders!</p>
+<div class="grid-x grid-margin-x">
+  <div class="cell small-10">
+    <div class="slider" data-slider data-initial-start="50">
+      <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1"></span>
+      <span class="slider-fill" data-slider-fill></span>
+    </div>
+  </div>
+  <div class="cell small-2">
+    <input type="number" id="sliderOutput1">
   </div>
 </div>
-
-<h1 class="subheader" style= "color: Tomato;">h1.subheader</h1>
-<h2 class="subheader" style= "color: DodgerBlue;">h2.subheader</h2>
-<h3 class="subheader" style= "color: MediumSeaGreen;">h3.subheader</h3>
-<h4 class="subheader" style="border:2px solid Tomato;">h4.subheader</h4>
-<h5 class="subheader" style="border:2px solid DodgerBlue;">h5.subheader</h5>
-<h6 class="subheader" style="border:2px solid Violet;">h6.subheader</h6>
-
-<p class="lead">What is Isaiah Shai Gilgeous-Alexander Lin's <em>true</em> identity?</p>
-
-<ul class="no-bullet">
-  <li>Isaiah Shai Gilegeous-Alexander Lin with a much longer description or more content.</li>
-  <li>Isaiah Shai Gilegeous-Alexander Lin</li>
-  <li>Isaiah Shai Gilegeous-Alexander Lin
-    <ul>
-      <li>Nested Isaiah Shai Gilegeous-Alexander Lin</li>
-      <li>Nested Isaiah Shai Gilegeous-Alexander Lin</li>
-      <li>Nested Isaiah Shai Gilegeous-Alexander Lin</li>
+<br>
+<p>Button Groups. </p>
+<br>
+<p>You can use css to change the styling of groups (gaps, alignment, width, etc)</p>
+<div class="button-group">
+  <a class="secondary button">View</a>
+  <a class="success button">Edit</a>
+  <a class="warning button">Share</a>
+  <a class="alert button">Delete</a>
+</div>
+<br>
+<p> Menu</p>
+<br>
+<p>Foundation has a basic menu class, as well as multiple variations</p>
+<ul class="menu">
+  <li><a href="#">One</a></li>
+  <li><a href="#">Two</a></li>
+  <li><a href="#">Three</a></li>
+  <li><a href="#">Four</a></li>
+</ul>
+<p> Drop Down Menus</p>
+<br>
+<p>Drop Down menus utilize lists within a menu class and can be as nested as you desire.</p>
+<ul class="dropdown menu" data-dropdown-menu>
+  <li>
+    <a href="#">Item 1</a>
+    <ul class="menu">
+      <li><a href="#">Item 1A</a></li>
+      <!-- ... -->
     </ul>
   </li>
-  <li>Isaiah Shai Gilegeous-Alexander Lin</li>
-  <li>Isaiah Shai Gilegeous-Alexander Lin</li>
-  <li>Isaiah Shai Gilegeous-Alexander Lin</li>
+  <li><a href="#">Item 2</a></li>
+  <li><a href="#">Item 3</a></li>
+  <li><a href="#">Item 4</a></li>
 </ul>
 
-<h2> Call outs</h2>
-<div class="callout secondary">
-  <h5>This is a secondary callout</h5>
-  <p>It has an easy to override visual style, and is appropriately subdued.</p>
-  <a href="#">It's dangerous to go alone, take this.</a>
-</div>
 
 <h2>Grids! </h2>
-<p> The most interesting feature of Foundations is the XY Grid classes that help make organization easier. Defaults is that the entire width of the page is 12 cells. Shown below is an example from documentation (with added colors for clarity). Theres a lot of additional formatting / complicated style options you can do to XY grids.</p>
-<br>
-<p> Example grid showcasing different cell sizes</p>
+<p> The most interesting feature of Foundations is the XY Grid classes that help make organization easier. Defaults is that the entire width of the page is 12 cells. Shown below are somes examples from documentation (with added colors for clarity).
+  Theres a lot you can do combining grids with other features .</p>
+<h3>X-grids</h3>
+<h4> Example x-grid showcasing different cell sizes</h4>
+<code class="code-block">&lt;div class="grid-x"&gt;
+  &lt;div class="cell" style="background-color: aqua;">full width cell &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="grid-x"&gt;
+  &lt;div class="cell small-6" style="background-color: coral;">6 cells &lt;/div&gt;
+ &lt;/div&gt;
+&lt; div class="grid-x"&gt;
+  &lt;div class="cell medium-6 large-4" style="background-color: beige;">12/6/4 cells&lt;/div&gt;
+  &lt;div class="cell medium-6 large-8" style="background-color: darkgoldenrod;">12/6/8 cells&lt;/div&gt;
+&lt;/div&gt;
+</code>
 <div class="grid-x" >
   <div class="cell" style="background-color: aqua;">full width cell</div>
 </div>
@@ -83,7 +101,26 @@ Time spent: 1
   <div class="cell medium-6 large-8" style="background-color: darkgoldenrod;">12/6/8 cells</div>
 </div>
 <br>
-<p>With grids you can have both padding and margins</p>
+<div class="callout secondary">
+
+<h5>What is the purpose of medium-6 large-4 and all these numbers??</h5>
+<p>The XY grid is built to adapt to different screen sizes, and for any page the width of the entire page will be 12 cells.
+   So having a medium-6 and a large-4 allows you to
+  control how large each cell will be on a different device. The 12/6/4 cell will be 6 cells wide on a medium page and 4 cells wide on a large page. You can see the medium-6 size change at play if you shrink the window from full screen.</p>
+  On a small screen it will default full width 12 cells and the cells will stack on top. 
+</div>
+
+<h4>With grids you can have both padding and margins</h3>
+<code class="code-block">
+  &lt;div class="grid-x grid-margin-x"&gt;
+    &lt;div class="cell medium-6 large-4" style="background-color: aqua;"&gt;12/6/4 cells&lt;/div&gt;
+    &lt;div class="cell medium-6 large-8" style="background-color: coral;"&gt;12/6/8 cells&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="grid-x grid-padding-x"&gt;
+    &lt;div class="cell medium-6 large-4" style="background-color: beige;">12/6/4 cells&lt;/div&gt;
+    &lt;div class="cell medium-6 large-8" style="background-color: darkgoldenrod;">12/6/8 cells&lt;/div&gt;
+  &lt;/div&gt;
+</code>
 <div class="grid-x grid-margin-x">
   <div class="cell medium-6 large-4" style="background-color: aqua;">12/6/4 cells</div>
   <div class="cell medium-6 large-8" style="background-color: coral;">12/6/8 cells</div>
@@ -92,5 +129,4 @@ Time spent: 1
   <div class="cell medium-6 large-4" style="background-color: beige;">12/6/4 cells</div>
   <div class="cell medium-6 large-8" style="background-color: darkgoldenrod;">12/6/8 cells</div>
 </div>
-
-<p><button class="button" data-open="exampleModal1">Example Button with Foundation</button></p>
+<br>

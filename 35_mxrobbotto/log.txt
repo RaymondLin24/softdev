@@ -1,3 +1,16 @@
+DISCO
+
+Interesting how it seems to have a sense of humor?? (secret key = you will never guess)
+Login method seems the same
+Honestly overall looks very similar to the correct way to code these kind of websites.
+The explanation part is kind of funny though.
+
+QCC
+
+
+
+
+
 blinker==1.8.2
 click==8.1.7
 Flask==3.0.3

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <a href="{{ url_for('new_story') }}">Start a New Story</a>
+    <h2>All Stories</h2>
+    <ul>
+        {% for story in stories %}
+            <li>
+                <a href="{{ url_for('add_to_story', story_id=story[0]) }}">{{ story[1] }}: {{ story[2] }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <h2>Your Stories</h2>
+    <ul>
+        {% for story in user_stories %}
+            <li>{{ story[0] }}: {{ story[1] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>

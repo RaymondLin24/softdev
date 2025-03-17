@@ -4,24 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        
+        h2 {
+            color: #333;
+        }
+
+        /* Links */
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container for lists */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        /* Story list styling */
+        .story-list {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .story-list li {
+            background-color: #e3f2fd;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        /* Buttons and Logout */
+        .logout {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin: 20px 0;
+            background-color: #f44336;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .logout:hover {
+            background-color: #d32f2f;
+        }
+
+        /* Layout for different sections */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        
+        .story-actions {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .story-actions a {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .story-actions a:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <a href="{{ url_for('new_story') }}">Start a New Story</a>
-    <h2>All Stories</h2>
-    <ul>
-        {% for story in stories %}
-            <li>
-                <a href="{{ url_for('add_to_story', story_id=story[0]) }}">{{ story[1] }}: {{ story[2] }}</a>
-            </li>
-        {% endfor %}
-    </ul>
-    <h2>Your Stories</h2>
-    <ul>
-        {% for story in user_stories %}
-            <li>{{ story[0] }}: {{ story[1] }}</li>
-        {% endfor %}
-    </ul>
-    <a href="{{ url_for('logout') }}">Logout</a>
+    <div class="container">
+        <h1>Welcome</h1>
+        
+        <!-- New story button -->
+        <div class="story-actions">
+            <a href="{{ url_for('new_story') }}">Start a New Story</a>
+        </div>
+
+        <h2>All Stories</h2>
+        <ul class="story-list">
+            {% for story in stories %}
+                <li>
+                    <a href="{{ url_for('add_to_story', story_id=story[0]) }}">{{ story[1] }}: {{ story[2] }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <h2>Your Stories</h2>
+        <ul class="story-list">
+            {% for story in user_stories %}
+                <li>{{ story[0] }}: {{ story[1] }}</li>
+            {% endfor %}
+        </ul>
+
+        <!-- Logout button -->
+        <a href="{{ url_for('logout') }}" class="logout">Logout</a>
+    </div>
 </body>
 </html>
+

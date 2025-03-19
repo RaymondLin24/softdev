@@ -1,0 +1,51 @@
+Chloe Wong, Brian Liu, Raymond Lin, Kishi Wijaya
+TTNG: Unbasic Jeans
+Softdev
+K37 -- Serving a website from virtual machine 
+2025 - 03 - 18
+Time Spent: 1 hr
+
+---
+
+Notes:
+sudo apt update
+    - You have enter your password after sudo-ing
+sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
+    -Very cool progress bar when apt installing
+sudo apt install python3-venv
+    - outputs some stuff like no vm guests are running outdated hypervisor (qemu) binaries on this host
+mkdir ~/myproject
+cd ~/myproject
+    - 
+python3.10 -m venv myprojectenv
+source myprojectenv/bin/activate
+    -makes vm
+pip install wheel
+pip install uwsgi flask
+    - new loading bar thats like a spinning wheel
+    - took a while to finish
+nano ~/myproject/myproject.py
+    -
+    
+    
+uwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app
+    - took long to run, website displays internal server error
+    - need to import project_name from app in wsgi.py
+
+configuration file (myproject.ini)
+
+Q: 
+what is source (source myprojectenv/bin/activate)
+what is wheel (pip install wheel)
+what is uWSGi and why is it stylized like that
+does it matter where you foistapp
+why is there two domain ips when you run the app? and why do only one of them work?
+    - maybe because its running on the droplet server
+
+-
+
+C:
+
+-
+
+C:

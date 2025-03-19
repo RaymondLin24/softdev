@@ -1,0 +1,13 @@
+Chloe Wong, Brian Liu, Raymond Lin, Kishi Wijaya
+Team Unbasic Jeans
+SoftDev
+K37 -- Serving a website from virtual machine
+2025-03-18
+Time Spent:
+
+Plan:
+1. We will follow the DigitalOcean up to and including Step 6
+2. We will complete the tutorial first with DCW then repeat for all other devos
+3. We will add HTTPS for each droplet
+- We will all provision a domain name
+- DBL will take notes as we go along

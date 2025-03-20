@@ -6,7 +6,6 @@ K37 -- Serving a website from virtual machine
 Time Spent: 1 hr
 
 ---
-
 Notes:
 sudo apt update
     - You have enter your password after sudo-ing
@@ -26,14 +25,12 @@ pip install uwsgi flask
     - took a while to finish
 nano ~/myproject/myproject.py
     -
-    
-    
 uwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app
     - took long to run, website displays internal server error
     - need to import project_name from app in wsgi.py
-
 configuration file (myproject.ini)
-
+domain needs a '.'
+-
 Q: 
 what is source (source myprojectenv/bin/activate)
 what is wheel (pip install wheel)
@@ -43,9 +40,9 @@ why is there two domain ips when you run the app? and why do only one of them wo
     - maybe because its running on the droplet server
 
 -
-
 C:
-
--
+after running sudo systemctl start myproject
+-warning: unit file source config file or dropins of myfoint.... Run systemctl daemon-reload to reload units
+installing nginx is a prerequesite (who knew)
 
 C:
